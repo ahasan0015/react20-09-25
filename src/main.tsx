@@ -7,6 +7,8 @@ import AppTest from './App.tsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Event from './event.tsx';
+import PropsPage from './PropsPage.tsx';
 
 
 
@@ -16,6 +18,8 @@ createRoot(document.getElementById('root')!).render(
     
    <AppTest/>
    <Demo></Demo>
+   <Event></Event>
+   <PropsPage/>
    
   </StrictMode>,
 )

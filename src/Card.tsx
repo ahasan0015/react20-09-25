@@ -1,5 +1,5 @@
-import { SocialLink } from "./SocailLink";
-import Icon form "./assets/react.svg"
+import { SocialLink } from "./SocailLink"
+import Icon from "./assets/react.svg"
 // import "./Card.css"
 const card = {
     border: "5px solid red",
