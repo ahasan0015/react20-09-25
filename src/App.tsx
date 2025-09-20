@@ -6,6 +6,7 @@
 import { Card } from "./Card"
 import Footer from "./Footer"
 import Header from "./Header"
+import Loop from "./Loop"
 
 
 // function App() {
@@ -44,6 +45,7 @@ function AppTest(){
     <Header/>
     <Card/> <hr />
     <Footer/>
+    <Loop/>
     </>
   )
 }
