@@ -2,13 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 // import './index.css'
 
-import Demo from './demo.tsx'
+import Demo from './components/demo.tsx'
 import AppTest from './App.tsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Event from './event.tsx';
-import PropsPage from './PropsPage.tsx';
+import Event from './components/event.tsx';
+import PropsPage from './components/PropsPage.tsx';
 
 
 

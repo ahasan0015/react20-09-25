@@ -1,5 +1,6 @@
 import PropsChild from "./PropsChild"
-import "./Card.css"
+import "./card/Card.css"
+import users from "../data.json"
 
 
 function PropsPage() {
@@ -24,7 +25,19 @@ function PropsPage() {
                     />
                 </div>
             </div>
+            <h2>Loop 2</h2>
+            <div className="row g-3">{
+                users.map((item) =>
+                <div key={ item.id } className="col-lg-4">
+                    {/* {<PropsChild {...item} />} */}
+                <PropsChild name={item.name}round={item.round}email={item.email}/>
+                </div>
+                )
+                }
+
+            </div>
         </div>
+
 
 
     )

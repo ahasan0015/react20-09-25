@@ -1,4 +1,4 @@
-import users from "./data.json";
+import users from "../data.json";
 function Loop(){
     return(
        <>
@@ -6,8 +6,8 @@ function Loop(){
             <h1>Loop</h1>
         </div>
         {/* {console.log(users)} */}
-        <table>
-        <thead>
+        <table className="table table-striped table-bordered" >
+        <thead className="table-primary">
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
@@ -17,16 +17,26 @@ function Loop(){
         </thead>
         <tbody>
             {
-                users.map((item)=>{
-                    return(
-                        <tr>
+                // users.map((item)=>{
+                //     return(
+                //         <tr>
+                //             <th>{item.id}</th>
+                //             <th>{item.name}</th>
+                //             <th>{item.round}</th>
+                //             <th>{item.email}</th>
+                //         </tr>
+                //     )
+                // })
+                users.map((item)=>
+                    (
+                        <tr key={item.id}>
                             <th>{item.id}</th>
                             <th>{item.name}</th>
                             <th>{item.round}</th>
                             <th>{item.email}</th>
                         </tr>
                     )
-                })
+                )
             }
         </tbody>
        </table>

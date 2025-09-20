@@ -1,4 +1,4 @@
-import { SocialLink } from "./SocailLink"
+import { SocialLink } from "../SocailLink"
 import Icon from "./assets/react.svg"
 // import "./Card.css"
 const card = {

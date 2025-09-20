@@ -3,10 +3,11 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
-import { Card } from "./Card"
-import Footer from "./Footer"
-import Header from "./Header"
-import Loop from "./Loop"
+// import { Card } from "./Card"
+// import Footer from "./Footer"
+// import Header from "./Header"
+import Loop from "./components/Loop"
+import UseState from "./components/UseState"
 
 
 // function App() {
@@ -42,10 +43,11 @@ import Loop from "./Loop"
 function AppTest(){
   return (
     <>
-    <Header/>
+    {/* <Header/>
     <Card/> <hr />
-    <Footer/>
+    <Footer/> */}
     <Loop/>
+    <UseState/>
     </>
   )
 }
