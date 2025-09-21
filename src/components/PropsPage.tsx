@@ -1,13 +1,16 @@
 import PropsChild from "./PropsChild"
 import "./card/Card.css"
 import users from "../data.json"
+import Header from "../layout/Header"
 
 
 function PropsPage() {
     // const User1 = { name: "John", age: 30, address: " New Work" }
     // const User2 = { name: "Sohel", age: 30, address: "Malibagh", email:"sohel@gmail.com", round:65}
     return (
-        <div className="container">
+        <>
+        <Header/>
+         <div className="container">
             <h1>PropsPage</h1>
             <div className="row g-3">
                 <div className="col-auto">
@@ -39,6 +42,8 @@ function PropsPage() {
         </div>
 
 
+        </>
+       
 
     )
 }

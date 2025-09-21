@@ -13,11 +13,11 @@ export default function PropsChild(props:any){
         </>
     )
 }
-interface Users{
-    name?:string;
-    email?:string;
-    round?:number;
-}
+// interface Users{
+//     name?:string;
+//     email?:string;
+//     round?:number;
+// }
 
 PropsChild.defaultProps ={
     name: "IsDB Trainee",

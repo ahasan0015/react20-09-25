@@ -4,10 +4,11 @@
 // import './App.css'
 
 // import { Card } from "./Card"
-// import Footer from "./Footer"
-// import Header from "./Header"
-import Loop from "./components/Loop"
-import UseState from "./components/UseState"
+import Footer from "./layout/Footer"
+import Header from "./layout/Header"
+// import Loop from "./components/Loop"
+// import UseState from "./components/UseState"
+import { Outlet } from "react-router-dom"
 
 
 // function App() {
@@ -40,14 +41,16 @@ import UseState from "./components/UseState"
 // }
 
 
-function AppTest(){
+function AppTest() {
   return (
     <>
-    {/* <Header/>
-    <Card/> <hr />
-    <Footer/> */}
-    <Loop/>
-    <UseState/>
+      <Header />
+      {/* <Card/>  */}
+      <Outlet />
+      <Footer />
+      
+      {/* <Loop/> */}
+      {/* <UseState/> */}
     </>
   )
 }
